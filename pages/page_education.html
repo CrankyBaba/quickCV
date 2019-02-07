@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>  
+      <head>  
+           <title>YourData</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<!--            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+ -->           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+      </head>  
+      <body>  
+           <div class="container">  
+                <br />  
+                <br />  
+                <h2 align="left">Academic details</h2>  
+            <div class="form-group">  
+                <form name="academic_detail" id="academic_detail">  
+                  <div class="table-responsive">  
+                    <table class="table table-bordered" id="dynamic_field_gradu">  
+                      <tr>  
+                        <td>
+                          <label for="graduation" style="float: left;">Graduation</label>
+                        </td>
+                      </tr>
+                        <tr>
+                          <td>
+                            <label for="nameGradu" style="float: left;">College Name</label>
+                            <input type="text" class="form-control name_list" id="nameGradu" name="nameGradu" placeholder="Your College Name">
+                          </td> 
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="courseGradu" style="float: left;">Course</label>
+                            <input type="text" class="form-control name_list" id="courseGradu" name="courseGradu" placeholder="Course">
+                          </td> 
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="pYearGradu" style="float: left;">Passing Year</label>
+                            <input type="date" class="form-control name_list" id="pYearGradu" name="pYearGradu" placeholder="Your Passing Year">
+                          </td> 
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="cgpaGradu" style="float: left;">CGPA</label>
+                            <input type="text" class="form-control name_list" id="cgpaGradu" name="cgpaGradu" placeholder="Your CGPA">
+                          </td> 
+                        </tr>
+                        <tr>
+                          <td>
+                            <label for="boardGradu" style="float: left;">University</label>
+                            <input type="text" class="form-control name_list" id="boardGradu" name="boardGradu" placeholder="University">
+                          </td> 
+                        </tr>
+                     </table>
+                    
+                     <hr>
+
+                      <table class="table table-bordered" id="dynamic_field_postgradu"> 
+                       <tr>
+                        <td>
+                          <label for="postgradu" style="float: left;">Post Graduation</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="namePost" style="float: left;">College Name</label>
+                            <input type="text" class="form-control name_list" id="namePost" name="namePost" placeholder="Your College Name">
+                        </td> 
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="coursePost" style="float: left;">Course</label>
+                            <input type="text" class="form-control name_list" id="coursePost" name="coursePost" placeholder="Course">
+                        </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="pYearPost" style="float: left;">Passing Year</label>
+                            <input type="date" class="form-control name_list" id="pYearPost" name="pYearPost" placeholder="Your Passing Year">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="cgpaPost" style="float: left;">CGPA</label>
+                            <input type="text" class="form-control name_list" id="cgpaPost" name="cgpaPost" placeholder="Your CGPA">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="boardPost" style="float: left;">University</label>
+                            <input type="text" class="form-control name_list" id="boardPost" name="boardPost" placeholder="University">
+                          </td> 
+                      </tr>
+                    </table>
+                    <hr>
+
+                      <table class="table table-bordered" id="dynamic_field_hs"> 
+                       <tr>
+                        <td>
+                          <label for="hs" style="float: left;">Higher Secondary</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="hs" style="float: left;">School Name</label>
+                            <input type="text" class="form-control name_list" id="schoolNameHs" name="schoolNameHs" placeholder="Your School Name">
+                        </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="pYearHs" style="float: left;">Passing Year</label>
+                            <input type="date" class="form-control name_list" id="pYearHs" name="pYearHs" placeholder="Your Passing Year">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="BoardHs" style="float: left;">Board</label>
+                            <input type="text" class="form-control name_list" id="boardHs" name="boardHs" placeholder="Your School Board Name">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="PercentHs" style="float: left;">Percentage</label>
+                            <input type="text" class="form-control name_list" id="PercentHs" name="percentHs" placeholder="Your Percentage">
+                          </td> 
+                      </tr>
+                    </table>
+                    <hr>
+
+                      <table class="table table-bordered" id="dynamic_field_sc"> 
+                       <tr>
+                        <td>
+                          <label for="sc" style="float: left;">Secondary</label>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                            <label for="sc" style="float: left;">School Name</label>
+                            <input type="text" class="form-control name_list" id="schoolNameSc" name="schoolNameSc" placeholder="Your School Name">
+                        </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="pYearSc" style="float: left;">Passing Year</label>
+                            <input type="date" class="form-control name_list" id="pYearSc" name="pYearSc" placeholder="Your Passing Year">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="BoardSc" style="float: left;">Board</label>
+                            <input type="text" class="form-control name_list" id="boardSc" name="boardSc" placeholder="Your School Board Name">
+                          </td> 
+                      </tr>
+                      <tr>
+                          <td>
+                            <label for="PercentSc" style="float: left;">Percentage</label>
+                            <input type="text" class="form-control name_list" id="PercentSc" name="percentSc" placeholder="Your Percentage">
+                          </td> 
+                      </tr>
+                    </table>
+                      
+                    <input type="button" name="submit" style="float: left;" id="submitEdu" class="btn btn-success" value="Submit" />      
+                  </div>  
+                </form>  
+            </div>  
+           </div> 
+
+<!-- unlocak to add more button   --> <!-- <td>
+                          <button type="button" name="add" id="add" class="btn btn-success">Add More</button>
+                        </td> -->  
+
+      </body>  
+       <script>  
+ $(document).ready(function(){  
+
+      $('#submitEdu').click(function(){            
+           $.ajax({  
+                url:"eValue.php",  
+                method:"POST",  
+                data:$('#academic_detail').serialize(),  
+                success:function(data)  
+                {  
+                     alert(data);
+                     window.location = 'demo.html#pageother';  
+                     $('#academic_detail').reset();  
+                }  
+           });  
+      });  
+ });  
+ </script>
+ </html>  

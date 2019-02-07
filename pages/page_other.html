@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>  
+      <head>  
+           <title>YourData</title>  
+           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />  
+<!--            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>  
+ -->           <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>  
+      </head>  
+      <body>  
+           <div class="container">  
+                <br />  
+                <br />  
+                <h2 align="left">Other important details</h2>  
+            <div class="form-group">  
+                <form name="other_detail" id="other_detail">  
+                  <div class="table-responsive">  
+                    <table class="table table-bordered" id="dynamic_field_obj">  
+                      <tr>  
+                        <td>
+                          <label for="obj" style="float: left;">Objective</label>
+                          <input type="text" class="form-control name_list" id="obj" name="obj" placeholder="Your future Objective">
+                        </td> 
+                       </tr>
+                     </table>
+                     <table class="table table-bordered" id="dynamic_field_skills">  
+                      <tr>  
+                        <td>
+                          <label for="skills" style="float: left;">Skills</label>
+                          <input type="text" class="form-control name_list" id="skills" name="skills[]" placeholder="Your awesome skills">
+                        </td> 
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_skill" id="add_skill">+</button></td>
+                       </tr>
+                     </table>
+                       <table class="table table-bordered" id="dynamic_field_hobby"> 
+                       <tr>
+                        <td>
+                          <label for="hobby" style="float: left;">Hobbies</label>
+                          <input type="text" name="hobby[]" class="form-control" id="hobby" placeholder="Your Awww Hobbies">
+                        </td> 
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_hobby" id="add_hobby">+</button></td>
+                      </tr>
+                    </table>
+                      <table class="table table-bordered" id="dynamic_field_achive">
+                       <tr>
+                        <td>
+                          <label for="achivements" style="float: left;">Achivements</label>
+                          <input type="text" name="achivements[]" class="form-control" id="achivements" placeholder="Noteable achivements">
+                        </td>
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_achiv" id="add_achiv">+</button></td> 
+                      </tr>
+                      </table>
+                      <table class="table table-bordered" id="dynamic_field_project">
+                      <tr>
+                        <td>
+                          <label for="projects" style="float: left;">Projects</label>
+                          <input type="text" name="projects[]" class="form-control" id="projects" placeholder="Your Super Projects">
+                        </td>
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_proj" id="add_proj">+</button></td> 
+                      </tr>
+                    </table>
+                    <table class="table table-bordered" id="dynamic_field_exp">
+                      <tr>
+                        <td>
+                          <label for="projects" style="float: left;">Work Experience</label>
+                          <input type="text" name="years[]" class="form-control" id="years" placeholder="Years Of Experiences">
+                          <input type="text" name="Cname[]" class="form-control" id="Cname" placeholder="Company Name">
+                        <input type="text" name="workType[]" class="form-control" id="workType" placeholder="Field Of Work">
+                        </td>
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_exp" id="add_exp">+</button></td> 
+                      </tr>
+                    </table>
+                      <table class="table table-bordered" id="dynamic_field_ref">                      
+                      <tr>
+                        <td>
+                          <label for="referance" style="float: left;">Refrence</label>
+                          <input type="text" name="ref[]" class="form-control" id="ref" placeholder="trustworthy refrance">
+                        </td>
+                        <td width="90px"><button type="button" class="btn btn-success" name="add_ref" id="add_ref">+</button></td> 
+                      </tr>  
+                    </table>  
+                    <input type="button" name="submit" style="float: left;" id="submitOther" class="btn btn-success" value="Submit" />      
+                  </div>  
+                </form>  
+            </div>  
+           </div> 
+
+<!-- unlocak to add more button   --> <!-- <td>
+                          <button type="button" name="add" id="add" class="btn btn-success">Add More</button>
+                        </td> -->  
+
+      </body>  
+       <script>  
+ $(document).ready(function(){  
+    
+    var i=1;
+    $('#add_skill').click(function(){
+      
+      i++;
+      $('#dynamic_field_skills').append('<tr id="row'+i+'"><td><input type="text" name="skills[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+    $(document).on('click', '.btn_remove', function(){  
+           var button_id = $(this).attr("id");   
+           $('#row'+button_id+'').remove();  
+      });
+
+    $('#add_hobby').click(function(){
+      // var i=1;
+      i++;
+      $('#dynamic_field_hobby').append('<tr id="row'+i+'"><td><input type="text" name="hobby[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+ 
+    $('#add_achiv').click(function(){
+      //var i=1;
+      i++;
+      $('#dynamic_field_achive').append('<tr id="row'+i+'"><td><input type="text" name="achivements[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+ 
+      $('#add_proj').click(function(){
+      //var i=1;
+      i++;
+      $('#dynamic_field_project').append('<tr id="row'+i+'"><td><input type="text" name="projects[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+      $('#add_exp').click(function(){
+      //var i=1;
+      i++;
+      $('#dynamic_field_exp').append('<tr id="row'+i+'"><td><input type="text" name="years[]" class="form-control name_list" /><input type="text" name="Cname[]" class="form-control name_list" /><input type="text" name="workType[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+
+    $('#add_ref').click(function(){
+      //var i=1;
+      i++;
+      $('#dynamic_field_ref').append('<tr id="row'+i+'"><td><input type="text" name="ref[]" class="form-control name_list" /></td><td><button type="button" name="remove" id="'+i+'" class="btn btn-danger btn_remove">X</button></td></tr>');
+    });
+
+  
+      $('#submitOther').click(function(){            
+           $.ajax({  
+                url:"oValue.php",  
+                method:"POST",  
+                data:$('#other_detail').serialize(),  
+                success:function(data)  
+                {  
+                     alert(data);  
+                     window.location = 'demo.html#pagedocuments';
+                     $('#other_detail').reset();  
+                }  
+           }); 
+            
+      });  
+ });  
+ </script>
+ </html>  
