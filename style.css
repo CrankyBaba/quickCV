@@ -1,0 +1,72 @@
+#pageContent{
+	
+}
+
+#loading{
+	visibility:hidden;
+}
+
+
+/*li a,li a:visited{
+	padding:5px 10px;
+	text-align:center;
+	background-color:#000033;
+	color:white;
+	-moz-border-radius:5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius:5px;
+
+	display:block;
+	margin-right:10px;
+}*/
+h1{
+	font-size:28px;
+	font-weight:bold;
+	font-family:"Trebuchet MS",Arial, Helvetica, sans-serif;
+}
+
+h2{
+	font-weight:normal;
+	font-size:20px;
+	color:#999999;
+}
+
+ul{
+	margin:30px 0px;
+}
+
+li{
+	list-style:none;
+	display:block;
+	float:left;
+	margin-right: 10px;
+	/*width:80px;*/
+}
+a, a:visited {
+	color:white;
+	text-decoration:none;
+	outline:none;
+}
+
+
+body{
+	margin-top:20px;
+	font-size:13px;
+	text-align:center;
+	
+/* background: #DBE6F6;  fallback for old browsers
+background: -webkit-linear-gradient(to top, #C5796D, #DBE6F6);  Chrome 10-25, Safari 5.1-6
+background: linear-gradient(to top, #C5796D, #DBE6F6); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
+ */
+background-image: linear-gradient(to right, #f4aed1, #dca3da, #ba9be2, #8897e7, #3494e6);
+}
+
+.clear{
+	clear:both;
+}
+
+
+
+
+
