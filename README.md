@@ -10,3 +10,8 @@ To import all the required table:
 And store all the content inside htdocs folder (in my case i am using XAMPP server.)
 
 :D Cheers!!
+
+Developer names:
+Atanu Mondal
+Amit Kumar Dey
+Abir Das
